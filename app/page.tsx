@@ -1,10 +1,14 @@
 export default function Home() {
   return (
-    <main style={{ padding: "2rem", fontFamily: "sans-serif" }}>
+    <main style={{ padding: "2.5rem", fontFamily: "sans-serif" }}>
       <h1>Tow Central</h1>
-      <p>On-demand towing. Built for drivers and customers.</p>
-      <p>Coming soon.</p>
-      <p>Courtesy of Gabe and Justin</p>
+      <p style={{ maxWidth: "600px", marginTop: "1rem" }}>
+        Tow Central is an on-demand towing platform designed to connect customers
+        with reliable tow operators faster and more transparently.
+      </p>
+      <p style={{ marginTop: "1rem", color: "#555" }}>
+        Currently in development.
+      </p>
     </main>
   );
 }
