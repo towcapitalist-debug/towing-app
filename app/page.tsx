@@ -6,7 +6,7 @@ export default function Home() {
         Tow Central is an on-demand towing platform designed to connect customers
         with reliable tow operators faster and more transparently.
       </p>
-      <p style={{ marginTop: "1rem", color: "#555" }}>
+      <p style={{ marginTop: "1rem", color: "rgba(48, 16, 190, 1)" }}>
         Currently in development.
       </p>
     </main>
