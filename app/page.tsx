@@ -1,14 +1,86 @@
-export default function Home() {
+export default function Page() {
   return (
-    <main style={{ padding: "2.5rem", fontFamily: "sans-serif" }}>
-      <h1>Tow Central</h1>
-      <p style={{ maxWidth: "600px", marginTop: "1rem" }}>
-        Tow Central is an on-demand towing platform designed to connect customers
-        with reliable tow operators faster and more transparently.
-      </p>
-      <p style={{ marginTop: "1rem", color: "rgba(48, 16, 190, 1)" }}>
-        Currently in development.
-      </p>
-    </main>
-  );
+    <>
+      <header>
+        <h1>
+          Tow<span>Commander</span>
+        </h1>
+        <div>24/7 On-Demand Towing</div>
+      </header>
+
+      <main>
+        <div className="card">
+          <h2>Request a Tow</h2>
+
+          <label htmlFor="pickup">Pickup Location</label>
+          <input
+            id="pickup"
+            type="text"
+            placeholder="Enter address or use current location"
+          />
+
+          <label htmlFor="dropoff">Drop-Off Location</label>
+          <input
+            id="dropoff"
+            type="text"
+            placeholder="Repair shop, home, dealership"
+          />
+
+          <label>Service Type</label>
+          <select>
+            <option>Standard Tow</option>
+            <option>Flatbed Tow</option>
+            <option>Winch-Out</option>
+            <option>Accident Recovery</option>
+            <option>Motorcycle Tow</option>
+          </select>
+
+          <label>Vehicle Condition</label>
+          <select>
+            <option>Does not start</option>
+            <option>Flat tire</option>
+            <option>Accident damage</option>
+            <option>Stuck / Off-road</option>
+          </select>
+
+          <button>Find Available Tow Trucks</button>
+          <div className="note">
+            Pricing shown is an estimate. Final cost confirmed before dispatch.
+          </div>
+        </div>
+
+        <div className="map">
+          <div className="tower-list">
+            <div className="tower">
+              <div>
+                <h4>IronHook Towing</h4>
+                <small>2.3 mi away • ETA 18 min</small>
+              </div>
+              <div className="price">$128</div>
+            </div>
+
+            <div className="tower">
+              <div>
+                <h4>Rapid Recovery</h4>
+                <small>3.1 mi away • ETA 25 min</small>
+              </div>
+              <div className="price">$142</div>
+            </div>
+
+            <div className="tower">
+              <div>
+                <h4>Midwest Tow Co.</h4>
+                <small>4.7 mi away • ETA 32 min</small>
+              </div>
+              <div className="price">$156</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        © 2025 Tow Commander • Rates, ETA, and availability simulated for demo purposes
+      </footer>
+    </>
+  )
 }
