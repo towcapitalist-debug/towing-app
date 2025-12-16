@@ -3,7 +3,7 @@ export default function Page() {
     <>
       <header>
         <h1>
-          Tow<span>Commander</span>
+          Tow<span>Central</span>
         </h1>
         <div>24/7 On-Demand Towing</div>
       </header>
