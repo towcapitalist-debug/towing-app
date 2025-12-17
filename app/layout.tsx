@@ -24,3 +24,11 @@ export default function RootLayout({
     </html>
   )
 }
+
+export const metadata = {
+  title: 'Tow Central',
+  description: '24/7 On-Demand Towing',
+  icons: {
+    icon: '/favicon.png',
+  },
+}
