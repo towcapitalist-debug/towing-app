@@ -6,7 +6,8 @@ export default function Page() {
         <h1>
           Tow<span>Central</span>
         </h1>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+
+        <div className="tagline">
           <Image
             src="/TC Logo.png"
             alt="Tow Commander Logo"
