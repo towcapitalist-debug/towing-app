@@ -278,10 +278,14 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 160px); /* header + footer */
-  padding: 2rem;
+  padding: 2rem 3rem;
 }
 
 .request-card {
   width: 100%;
   max-width: 420px;
+}
+
+.results-map {
+  height: calc(100vh - 220px); /* header + footer */
 }

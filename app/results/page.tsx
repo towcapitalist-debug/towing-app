@@ -20,8 +20,8 @@ export default function ResultsPage() {
         </div>
       </header>
 
-      <main>
-        <div className="map">
+      <main className="results-page">
+        <div className="map results-map">
           <div className="tower-list">
             <div className="tower">
               <div>
