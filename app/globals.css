@@ -286,6 +286,13 @@ footer {
   max-width: 420px;
 }
 
+.results-page {
+  display: block;      /* override global grid */
+  padding: 0;
+}
+
 .results-map {
-  height: calc(100vh - 220px); /* header + footer */
+  width: 100%;
+  height: calc(100vh - 160px);
+  border-radius: 0;
 }
