@@ -1,5 +1,8 @@
+'use client'
+import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 export default function Page() {
+  const router = useRouter()
   return (
     <>
       <header>
@@ -55,43 +58,17 @@ export default function Page() {
             <option>Stuck / Off-road</option>
           </select>
 
-          <button>Find Available Tow Trucks</button>
+          <button onClick={() => router.push('/results')}>
+            Find Available Tow Trucks
+          </button>
           <div className="note">
             Pricing shown is an estimate. Final cost confirmed before dispatch.
-          </div>
-        </div>
-
-        <div className="map">
-          <div className="tower-list">
-            <div className="tower">
-              <div>
-                <h4>IronHook Towing</h4>
-                <small>2.3 mi away • ETA 18 min</small>
-              </div>
-              <div className="price">$128</div>
-            </div>
-
-            <div className="tower">
-              <div>
-                <h4>Rapid Recovery</h4>
-                <small>3.1 mi away • ETA 25 min</small>
-              </div>
-              <div className="price">$142</div>
-            </div>
-
-            <div className="tower">
-              <div>
-                <h4>Midwest Tow Co.</h4>
-                <small>4.7 mi away • ETA 32 min</small>
-              </div>
-              <div className="price">$156</div>
-            </div>
           </div>
         </div>
       </main>
 
       <footer>
-        © 2025 Tow Commander • Rates, ETA, and availability simulated for demo purposes
+        © 2025 Tow Central • Rates, ETA, and availability simulated for demo purposes
       </footer>
     </>
   )
