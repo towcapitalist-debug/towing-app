@@ -7,8 +7,11 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Tow Commander – Request a Tow',
-  description: 'On-demand towing with transparent pricing and ETA'
+  title: 'Tow Central',
+  description: '24/7 On-Demand Towing'
+  icons: {
+    icon: '/favicon.png',
+  },
 }
 
 export default function RootLayout({
@@ -23,12 +26,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-}
-
-export const metadata = {
-  title: 'Tow Central',
-  description: '24/7 On-Demand Towing',
-  icons: {
-    icon: '/favicon.png',
-  },
 }
