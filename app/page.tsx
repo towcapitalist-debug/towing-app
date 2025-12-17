@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export default function Page() {
   return (
     <>
@@ -5,7 +6,16 @@ export default function Page() {
         <h1>
           Tow<span>Central</span>
         </h1>
-        <div>24/7 On-Demand Towing</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+          <Image
+            src="/TC Logo.png"
+            alt="Tow Commander Logo"
+            width={28}
+            height={28}
+            priority
+          />
+          <span>24/7 On-Demand Towing</span>
+        </div>
       </header>
 
       <main>
