@@ -8,7 +8,7 @@ const inter = Inter({
 
 export const metadata = {
   title: 'Tow Central',
-  description: '24/7 On-Demand Towing'
+  description: '24/7 On-Demand Towing',
   icons: {
     icon: '/favicon.png',
   },
