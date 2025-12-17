@@ -272,3 +272,16 @@ footer {
     text-align: center;
   }
 }
+
+.request-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px); /* header + footer */
+  padding: 2rem;
+}
+
+.request-card {
+  width: 100%;
+  max-width: 420px;
+}

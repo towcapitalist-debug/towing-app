@@ -1,5 +1,6 @@
 import Image from 'next/image'
-export default function Page() {
+
+export default function ResultsPage() {
   return (
     <>
       <header>
@@ -10,62 +11,21 @@ export default function Page() {
         <div className="tagline">
           <Image
             src="/TC Logo.png"
-            alt="Tow Commander Logo"
+            alt="Tow Central Logo"
             width={35}
             height={35}
             priority
           />
-          <span>24/7 On-Demand Towing</span>
+          <span>Available Tow Trucks</span>
         </div>
       </header>
 
       <main>
-        <div className="card">
-          <h2>Request a Tow</h2>
-
-          <label htmlFor="pickup">Pickup Location</label>
-          <input
-            id="pickup"
-            type="text"
-            placeholder="Enter address or use current location"
-          />
-
-          <label htmlFor="dropoff">Drop-Off Location</label>
-          <input
-            id="dropoff"
-            type="text"
-            placeholder="Repair shop, home, dealership"
-          />
-
-          <label>Service Type</label>
-          <select>
-            <option>Standard Tow</option>
-            <option>Flatbed Tow</option>
-            <option>Winch-Out</option>
-            <option>Accident Recovery</option>
-            <option>Motorcycle Tow</option>
-            <option>Matt Gray will come and personally tow your vehicle</option>
-          </select>
-
-          <label>Vehicle Condition</label>
-          <select>
-            <option>Does not start</option>
-            <option>Flat tire</option>
-            <option>Accident damage</option>
-            <option>Stuck / Off-road</option>
-          </select>
-
-          <button>Find Available Tow Trucks</button>
-          <div className="note">
-            Pricing shown is an estimate. Final cost confirmed before dispatch.
-          </div>
-        </div>
-
         <div className="map">
           <div className="tower-list">
             <div className="tower">
               <div>
-                <h4>IronHook Towing</h4>
+                <h4>Trey's Towing</h4>
                 <small>2.3 mi away • ETA 18 min</small>
               </div>
               <div className="price">$128</div>
@@ -91,7 +51,7 @@ export default function Page() {
       </main>
 
       <footer>
-        © 2025 Tow Commander • Rates, ETA, and availability simulated for demo purposes
+        © 2025 Tow Central • Rates, ETA, and availability simulated for demo purposes
       </footer>
     </>
   )
