@@ -10,8 +10,8 @@ export default function Page() {
           <Image
             src="/TC Logo.png"
             alt="Tow Commander Logo"
-            width={28}
-            height={28}
+            width={35}
+            height={35}
             priority
           />
           <span>24/7 On-Demand Towing</span>
