@@ -11,7 +11,7 @@ export default function ResultsPage() {
 
         <div className="tagline">
           <Image
-            src="/TC Logo.png"
+            src="/tclogo.png"
             alt="Tow Central Logo"
             width={35}
             height={35}
